@@ -27,3 +27,22 @@ for x in range(10):
 ```
 squares_of_evens = [x**2 for x in range(10) if x % 2 == 0]
 ```
+
+
+### generator expressions vs list comprehensions
+
+* same syntax
+
+* [] -> returns a list -> makes a list immediately in memory
+* () -> returns a generator object -> <class 'generator'> -> memory efficient - already an iterator
+
+iter([list comprehension]) -> returns iterator object
+
+original filter() function evaluate lazy, - the main advantage of a filter object
+
+using generator instead of a list makes it lazy
+
+
+A filter object in Python is the iterator returned by the built-in filter() function. It represents a lazy sequence of elements from an iterable that satisfy a given condition.
+
+Unlike a list, a filter object does not store all elements in memory; it generates each element on demand as you iterate over it.
