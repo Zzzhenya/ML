@@ -19,7 +19,9 @@ def isInt(val: any) -> bool:
 
 
 def main(S: str, N: int):
-    print(S, N)
+    words = S.split()
+    result = list(ft_filter(lambda w: len(w) > N, words))
+    print(result)
 
 
 if __name__ == "__main__":
