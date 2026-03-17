@@ -46,3 +46,17 @@ using generator instead of a list makes it lazy
 A filter object in Python is the iterator returned by the built-in filter() function. It represents a lazy sequence of elements from an iterable that satisfy a given condition.
 
 Unlike a list, a filter object does not store all elements in memory; it generates each element on demand as you iterate over it.
+
+
+## all vs any
+
+all - return true if everything is true
+
+any - return true if at least one is true
+
+
+all (generator expression)
+
+or 
+
+all ([list comprehension])
