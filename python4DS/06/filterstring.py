@@ -28,7 +28,9 @@ if __name__ == "__main__":
     try:
         assert len(sys.argv) == 3, "the arguments are bad"
         assert isInt(sys.argv[2]), "the arguments are bad"
-        # check string only contain letters and space chars
+        # check string only contain letters and space chars,
+        # what about numbers?
+        # ret = [c.isalnum() or c.isspace() for c in sys.argv[1]]
         ret = [c.isalpha() or c.isspace() for c in sys.argv[1]]
         assert all(ret), "the arguments are bad"
         first_arg = sys.argv[1]
